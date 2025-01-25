@@ -23,3 +23,16 @@ function exibirLista() {
         lista.append(amigo,item);
     })
 }
+
+function sortearAmigo() {
+    let qtdDeAmigos = amigos.length;
+
+    if( qtdDeAmigos != 0) {
+        let indiceAleatorio = Math.floor(Math.random() * qtdDeAmigos);
+        console.log(indiceAleatorio);
+        let amigoSecreto = amigos[indiceAleatorio];
+
+        let tagResultadoo = document.getElementById('resultado');
+        tagResultadoo.innerHTML = `Seu amigo secreto é ${amigoSecreto}.`;
+    }
+}
