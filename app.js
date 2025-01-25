@@ -29,7 +29,6 @@ function sortearAmigo() {
 
     if( qtdDeAmigos != 0) {
         let indiceAleatorio = Math.floor(Math.random() * qtdDeAmigos);
-        console.log(indiceAleatorio);
         let amigoSecreto = amigos[indiceAleatorio];
 
         let tagResultadoo = document.getElementById('resultado');
